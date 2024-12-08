@@ -34,19 +34,19 @@
       }
     
     h2 {font-family: Albert Sans;
-      color: #403F3F;
+      color: #6C6B6B;
       font-size: 30px;}
     
     h3 {font-family: Albert Sans;
       font-size: 16px;
-      color: #403F3F;
+      color: #6C6B6B;
       letter-spacing: 1px;
     }
     
     
     h4 {font-family: Albert Sans;
       font-size: 12px;
-      color: #403F3F;
+      color: #6C6B6B;
       letter-spacing: 1px;
     }
     
@@ -159,12 +159,12 @@
       width: 100%;
       height: 80px;
       background-color: #E89C9C;
-      position: sticky; /* Stacks #blockE in the normal flow below #blockC */
-      top: 178px;  /* Ensures it appears below blockC (136px height + extra spacing) */
-      display: flex; /* Use flexbox for centering */
-      align-items: center; /* Vertically center the text */
-      justify-content: center; /* Horizontally center the text */
-      flex-direction: column; /* Ensures content stacks vertically */
+      position: sticky; 
+      top: 178px; 
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
       text-align: center;
     }
     
@@ -183,8 +183,8 @@
       width: 100%;
       height: 1000px;
       background-color: pink;
-      position: relative; /* Stacks #blockE in the normal flow below #blockC */
-      top: 178px;  /* Ensures it appears below blockC (136px height + extra spacing) */
+      position: relative; 
+      top: 178px; 
     }
     
     #blockF1 {
@@ -199,8 +199,13 @@
     
     #blockF1 h3 {
       margin-top: 0px;
+      
     }
     
+    label {  /* this helps space out the items in the checklist */
+      display: inline-block;
+      margin-bottom: 20px;
+    }
     
     #blockF2 {
      background-color: #A9D3FF;
@@ -247,19 +252,31 @@
   
   <div id="blockF">
     <div id="blockF1">
-      <h3>Product Type</h3>
+      <h3>PRODUCT TYPE</h3>
       
-      <h3>
-        <form action="/action_page.php">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> 
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br><br>
-        <input type="submit" value="Submit">
+      <h4>
+        <form action="/action_page.php"><!-- checkbox got from w3schools.com --> 
+          
+        <input type="checkbox" id="dinnerplate" name="dinnerplate" value="dinnerplate"> 
+        <label for="dinnerplate"> DINNER PLATES (2)</label><br>
+          
+        <input type="checkbox" id="sideplate" name="sideplate" value="sideplate">
+        <label for="sideplate"> SIDE PLATES (2)</label><br>
+          
+        <input type="checkbox" id="bowl" name="bowl" value="bowl">
+        <label for="vehicle3"> BOWLS (2)</label><br>
+          
+        <input type="checkbox" id="cup" name="cup" value="cup">
+        <label for="cup"> CUPS (3)</label><br>
+          
+        <input type="checkbox" id="tray" name="tray" value="tray">
+        <label for="tray"> TRAYS (1)</label><br>
+          
+        <input type="checkbox" id="coaster" name="coaster" value="coaster">
+        <label for="coaster"> COASTERS (3)</label><br>
+  
         </form>
-      </h3>
+      </h4>
     </div>
     
     <div id="blockF2">
