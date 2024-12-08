@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="eng CA">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title> Xenia Taler/New Arrivals </title>
+  
+  <style>
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box; /* cite this */
+    }
+    
+    h1 {font-family: DM Sans;
+      color: #403F3F;
+      font-size: 30px;
+      letter-spacing: 2px;
+      }
+    
+    h2 {font-family: Albert Sans;
+      color: #403F3F;
+      font-size: 30px;}
+    
+    h3 {font-family: Albert Sans;
+      font-size: 16px;
+      color: #403F3F;
+      letter-spacing: 1px;
+    }
+    
+    
+    h4 {font-family: Albert Sans;
+      font-size: 12px;
+      color: #403F3F;
+      letter-spacing: 1px;
+    }
+    
+    p {font-family: Albert Sans;
+      font-size: 10px;
+      color: #767e78;}
+    
+    h1, h2, h3, h4, h5, h6, p, ul, li, a {
+      font-weight: 400;
+      color: inherit; /* Inherit color from parent, or set a custom color */
+      text-decoration: none;
+    }
+
+    b {
+      font-weight: 700;
+    }
+    
+    ul {
+      font-family: Albert Sans;
+      color: #6C6B6B;
+      font-size: 14px;
+      list-style-type: none;
+      overflow: hidden;
+      background-color: transparent;
+      position: absolute;
+        
+      display: flex; /* Use flexbox to align list items horizontally */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */;  
+    }
+
+    li {
+      margin-right: 40px;
+    }
+
+    li a {
+      color: #6C6B6B;
+      opacity: 0.6;
+      left: 40px;
+      padding: 14px 16px;
+      text-decoration: none;
+    } 
+
+    li a:hover:not(.active) {
+      color: #6C6B6B;
+      opacity: 100%;
+    }
+
+
+    .active {
+      color: #E76B6B;
+      opacity: 1;
+    }
+      
+    #blockA {
+      width: 100%;
+      height: 42px;
+      background-color: #F9D788;
+      position: fixed;
+      display: flex;
+      align-items: center; 
+      justify-content: center; /* cite this */
+      z-index: 1000; /*cite this*/
+    }
+    
+    #blockA h4 {
+      letter-spacing: 1px;
+    }
+    
+    #blockB {
+      width: 100%;
+      height: 94px;
+      background-color: white;
+      position: fixed;
+      top: 42px;
+      padding-top: 10px;
+      padding-left: 60px;
+    }
+    
+    #blockC {
+      width: 100%;
+      height: 30px;
+      background-color: white;
+      position: fixed;
+      top: 136px;
+      padding-top: 12px;
+      padding-left: 40px;
+      border: 1px solid #EDEDED;
+      display: flex;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+      /*cite this*/
+    }
+    
+    #blockD {
+      width: 700px;
+      height: 42px;
+      background-color: #F1F1F1;
+      position: fixed;
+      top: 42px;
+      left: 50%;
+      transform: translate(-50%, 60%);
+      border-radius: 21px;
+    }   
+    
+    #blockE {
+      width: 100%;
+      height: 200px;
+      position: relative; /* Stacks #blockE in the normal flow below #blockC */
+      top: 178px;  /* Ensures it appears below blockC (136px height + extra spacing) */
+      display: flex; /* Use flexbox for centering */
+      align-items: center; /* Vertically center the text */
+      justify-content: center; /* Horizontally center the text */
+      flex-direction: column; /* Ensures content stacks vertically */
+      text-align: center;
+    }
+    
+    #blockE h4 {
+      margin-top: -20px;
+    }
+    
+    #blockF {
+      width: 100%;
+      height: 850px;
+      position: relative;
+      top: 178px;
+      background-color: white;
+    }
+    
+    #blockF1 {
+      width: 486px;
+      height: 700px;
+      position: relative;
+      display: inline;
+      float: left;
+      left: 200px;
+      top: 20px;
+      margin-right: 140px;
+      border-radius: 10px;
+    } 
+    
+    #blockF2 {
+      width: 486px;
+      height: 700px;
+      position: relative;
+      display: inline;
+      float: left;
+      left: 200px;
+      top: 20px;
+      margin-right: 140px;
+      border-radius: 10px;
+    } 
+    
+    #blockF3 {
+      background-color: white;
+      width: 486px;
+      height: 100px;
+      position: relative;
+      display: inline;
+      float: left;
+      left: 200px;
+      top: 20px;
+       margin-right: 140px;
+    } 
+    
+    #blockF4 {
+      background-color: white;
+      width: 486px;
+      height: 100px;
+      position: relative;
+      display: inline;
+      float: left;
+      left: 200px;
+      top: 20px;
+      margin-right: 140px;
+    }
+    
+    #blockK {
+      width: 100%;
+      height: 330px;;
+      background-color: #555555; 
+      top: 200px;
+      position: relative;
+    }
+    
+    #blockK h3 {
+      color: white;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+    
+    #blockK h4 {
+      color: white;
+      line-height: 40px;
+      letter-spacing: 1px;
+      margin-top: -10px; 
+    }
+    
+    #blockK1 {
+      width: 344px;
+      height: 200px;
+      background-color: #555555; 
+      position: absolute;
+      left: 60px;
+      top: 40px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #blockK2 {
+      width: 344px;
+      height: 200px;
+      background-color: #555555;
+      position: absolute;
+      left: calc(60px + 334px + 40px);
+      top: 40px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #blockK3 {
+      width: 344px;
+      height: 200px;
+      background-color: #555555; 
+      position: absolute;
+      left: calc(60px + 334px + 40px + 334px + 50px);
+      top: 40px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #blockK4 {
+      width: 344px;
+      height: 200px;
+      background-color: #555555; 
+      position: absolute;
+      left: calc(60px + 334px + 40px + 334px + 50px + 334px + 50px);
+      top: 40px;
+      margin: 0;
+      padding: 0;
+    }
+    
+   </style>
+</head>
+  
+<body>
+  
+  <div id="blockA">
+    <h4>FREE SHIPPING FOR ORDERS OVER $150!</h4>
+  </div>
+  
+   <div id="blockE">
+      <h3>
+        NEW ARRIVALS
+      </h3> <br>
+      <h4>
+        Introducing coasters, our latest addition to home decor. Crafted with sustainable <br> materials and designed with colourful shapes and patterns, our coasters are designed to mix and match seamlessly into any setting. 
+      </h4>
+  </div>
+  
+  <div id="blockF">
+    <div id="blockF1">
+      <img src="coaster1.png" alt="coaster 1" width="486" height="700">
+    </div>
+     <div id="blockF2">
+       <img src="coaster2.png" alt="coaster 2" width="486" height="700">
+    </div>
+    <div id="blockF3">
+      <h3>
+        COLOURFIELD COASTER
+      </h3>
+      <h4>
+        <u> SHOP NOW </u>
+      </h4>
+      
+    </div>
+    <div id="blockF4">
+      <h3>
+        MEMPHIS COASTER
+      </h3>
+      <h4>
+        <u> SHOP NOW </u>
+      </h4>
+    </div>
+  </div>
+  
+  <div id="blockK">
+    <div id="blockK1">
+      <h3>
+        Our Company
+      </h3> <br>
+      <h4>
+        Store Locations <br>
+        Billing Information <br>
+        Shipping & Returns <br>
+        Privacy Policy <br> 
+        Terms & Conditions <br>
+      </h4>
+    </div>
+    
+    <div id="blockK2">
+      <h3>
+        Customer Support
+      </h3> <br>
+      <h4>
+        <a href="mailto:j45sun@uwaterloo.ca" style="color: white;">  Contact Us </a> <br>
+        Track your Order <br>
+        Your Account <br>
+        FAQ <br>
+      </h4>
+    </div>
+    
+    <div id="blockK3">
+      <h3>
+        Company Information
+      </h3> <br>
+      <h4>
+        Product Info <br>
+        Stocklist <br>
+        Wholesale <br>
+      </h4>
+    </div>
+    
+    <div id="blockK4">
+       <h3>
+        Social Media <br>
+        <i class="fa fa-instagram" style="font-size:36px;margin-top: 30px;"></i>
+        <i class="fa fa-twitter" style="font-size:36px;margin-left:20px;"></i>
+        <i class="fa fa-facebook-square" style="font-size:36px;margin-left:20px;"></i>
+      </h3>
+       
+    </div>
+    
+  </div>
+  
+  <div id="blockB">
+    <div id="blockD">
+    </div>
+    <h1><a href="https://j45sun.github.io/A3/">XENIA TALER</a></h1>
+  </div>
+    
+  <div id="blockC">
+     <ul>
+      <li><a class="active" href="#NEWARRIVALS">NEW ARRIVALS</a></li>
+      <li><a href="#SALES">SALES</a></li>
+      <li><a href="#COLLECTIONS">COLLECTIONS</a></li>
+      <li><a href="#GIFTIDEAS">GIFT IDEAS</a></li>
+      <li><a href="#ABOUT US">ABOUT US</a></li>
+      <li><a href="#SUSTAINABILITY">SUSTAINABILITY</a></li>
+      <li><a href="#SUPPORT">SUPPORT</a></li>
+    </ul>
+  </div>
+  
+    
+  </body>
+</html>
