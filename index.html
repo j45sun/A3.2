@@ -319,7 +319,7 @@
       float: left;
       margin-top: 90px;
       border-radius: 8px
-    }
+    } 
     
     #blockF2k {
      background-color: #F1EEE9;
@@ -357,8 +357,8 @@
       margin: 0px;
     }
     
-     #blockF3 {
-     background-color: #A9D3FF;
+    #blockF3 {
+      background-color: #A9D3FF;
       width: 193px;
       height: 40px;
       display: inline;
@@ -367,6 +367,48 @@
       margin-top: 40px;
     }
     
+    .dropbtn {
+      background-color: white;
+      outline: 1px solid #ACACAC;
+      border-radius: 8px;
+      width: 193px;
+      height: 40px;
+      font-family: "Albert Sans";
+      font-size: 16px;
+      letter-spacing: 1px;
+      border: none;
+      color: #6C6B6B;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      
+    }
+
+   .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 193px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      font-family: "Albert Sans";
+      letter-spacing: 1px;
+      font-size: 12px;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      color: #6C6B6B;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
    </style>
 </head>
   
@@ -588,7 +630,16 @@
   </div>
     
   <div id="blockF3">
-      
+    <div class="dropdown">
+    <button class="dropbtn">Featured <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+      <a href="#">Bestselling</a>
+      <a href="#">Price, from lowest to highest</a>
+      <a href="#">Price, from lowest to highest</a>
+      <a href="#">Date, from newest to oldest</a>
+      <a href="#">Date, from newest to oldest</a>
+      </div>
+    </div>
   </div>
 
   <div id="blockB">
