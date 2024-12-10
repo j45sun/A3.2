@@ -24,7 +24,8 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      box-sizing: border-box; /* cite this */
+      background-color: white;
+      box-sizing: border-box;
     }
     
     h1 {font-family: DM Sans;
@@ -75,11 +76,10 @@
       list-style-type: none;
       overflow: hidden;
       background-color: transparent;
-      position: absolute;
-        
-      display: flex; /* Use flexbox to align list items horizontally */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */;  
+      position: absolute;  
+      display: flex; 
+      margin: 0;
+      padding: 0;  
     }
 
     li {
@@ -112,15 +112,15 @@
       position: fixed;
       display: flex;
       align-items: center; 
-      justify-content: center; /* cite this */
-      z-index: 1000; /*cite this*/
+      justify-content: center; 
+      z-index: 1000; /* a high amount is given to the z-index so that it ensures blockA always remains at the top */
     }
     
      #blockA h4 {
       color: #5F3B25;
     }
     
-    #blockB {
+    #blockB { /* Second box below yellow box */ 
       width: 100%;
       height: 94px;
       background-color: white;
@@ -147,7 +147,7 @@
       color: #6C6B6B;
     }
     
-    #blockC {
+    #blockC { /* navigation bar */ 
       width: 100%;
       height: 30px;
       background-color: white;
@@ -158,10 +158,9 @@
       border: 1px solid #EDEDED;
       display: flex;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
-      /*cite this*/
     }
     
-    #blockD {
+    #blockD { /* search bar */ 
       width: 700px;
       height: 42px;
       background-color: #F1F1F1;
@@ -181,7 +180,7 @@
       color: #999999;
     } 
     
-    #blockE {
+    #blockE { /* annual holiday sale block */
       width: 100%;
       height: 80px;
       background-color: #E89C9C;
@@ -205,7 +204,7 @@
       margin-top: -30px;
     }
     
-     #blockF {
+     #blockF { /* block that fits "product type" list, images of products, and the drop down menu*/
       width: 100%;
       height: 1399px;
       background-color: white;
@@ -218,7 +217,7 @@
       
     }
     
-    #blockF1 {
+    #blockF1 { /* product type checklist */
       background-color: white;
       width: 194px;
       height: 545px;
@@ -233,6 +232,14 @@
       margin-bottom: 20px;
       margin-left: 10px;
     }
+    
+     /*
+    Code copied from: https://www.w3schools.com/tags/tag_label.asp
+    Author: w3schools
+    Name: HTML <label> Tag
+    Description: label helps space out items in the checklist
+    Date retrieved: 8 december 2024
+    */
     
     #blockF2 {
      background-color: white;
@@ -250,7 +257,7 @@
       
     } 
     
-    #blockF2a {
+    #blockF2a { /* blockF a-l is for the items */
      background-color: #F1EEE9;
       width: 223px;
       height: 231px;
@@ -367,7 +374,7 @@
       border-radius: 8px
     }
     
-    #blockF2m {
+    #blockF2m { 
      background-color: white;
       width: 100%;
       height: 40px;
@@ -383,7 +390,7 @@
       margin: 0px;
     }
     
-    #blockF3 {
+    #blockF3 { /* dropdown menu */
       background-color: white;
       width: 193px;
       height: 40px;
@@ -421,7 +428,6 @@
     }
 
     .dropdown-content a {
-      color: black;
       font-family: "Albert Sans";
       letter-spacing: 1px;
       font-size: 12px;
@@ -434,6 +440,14 @@
     .dropdown-content a:hover {background-color: #ddd;}
 
     .dropdown:hover .dropdown-content {display: block;}
+    
+     /*
+    Code copied from: https://www.w3schools.com/css/css_dropdowns.asp
+    Author: w3schools
+    Name: CSS Dropdowns
+    Description: CSS styling of dropdown menu was referenced from w3schools
+    Date retrieved: 8 december 2024
+    */
     
     #blockK {
       width: 100%;
@@ -499,8 +513,8 @@
       <h3>PRODUCT TYPE</h3>
       
       <h4>
-        <form action="/action_page.php"><!-- checkbox got from w3schools.com --> 
-          
+        <form action="/action_page.php">
+              
         <input type="checkbox" id="dinnerplate" name="dinnerplate" value="dinnerplate"> 
         <label for="dinnerplate"> DINNER PLATES (2)</label><br>
           
@@ -518,6 +532,13 @@
           
         <input type="checkbox" id="coaster" name="coaster" value="coaster">
         <label for="coaster"> COASTERS (3)</label><br>
+          
+          <!--  Code copied from: https://www.w3schools.com/tags/att_HTML <input type="checkbox">
+        Author: w3schools
+        Name: HTML <input type="checkbox">
+        Description: checkbox code referenced from w3schools
+        Date retrieved: 8 december 2024
+        -->
   
         </form>
       </h4>
@@ -778,6 +799,9 @@
       <li><a href="#SUPPORT">SUPPORT</a></li>
     </ul>
   </div>
+    
+  </div>
+    
     
   </body>
 </html>
